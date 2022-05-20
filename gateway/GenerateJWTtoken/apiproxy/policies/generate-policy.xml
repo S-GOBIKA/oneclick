@@ -7,8 +7,6 @@
     <GrantType>request.header.grant_type</GrantType>
     <GenerateResponse enabled="true"/>
     <Algorithm>HS512</Algorithm>
-    <SecretKey>
-        <Value>request.header.key</Value>
-    </SecretKey>
+    
     <ExpiresIn>3600000</ExpiresIn>
 </OAuthV2>

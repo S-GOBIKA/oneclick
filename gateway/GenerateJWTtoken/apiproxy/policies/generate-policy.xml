@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OAuthV2 name="generate-policy">
+    <Operation>GenerateJWTAccessToken</Operation>
+    <SupportedGrantTypes>
+        <GrantType>client_credentials</GrantType>
+    </SupportedGrantTypes>
+    <GrantType>request.header.grant_type</GrantType>
+    <GenerateResponse enabled="true"/>
+    <Algorithm>HS512</Algorithm>
+    <SecretKey>
+        <Value>request.header.key</Value>
+    </SecretKey>
+    <ExpiresIn>3600000</ExpiresIn>
+</OAuthV2>

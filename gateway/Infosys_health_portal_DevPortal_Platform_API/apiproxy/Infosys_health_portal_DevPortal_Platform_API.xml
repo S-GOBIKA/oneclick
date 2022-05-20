@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="2" name="Infosys_health_portal_DevPortal_Platform_API">
+    <Basepaths>/infosys_health_portal_devportal_platform_api</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1606392605026</CreatedAt>
+    <CreatedBy>rohit.karadi@infosys.com</CreatedBy>
+    <Description>Health_platform_api for developer portal.</Description>
+    <DisplayName>Infosys_health_portal_DevPortal_Platform_API</DisplayName>
+    <LastModifiedAt>1606480339628</LastModifiedAt>
+    <LastModifiedBy>rohit.karadi@infosys.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:5e2bac6550ccca27d459fed2783834def1cbe5db3652064676fc3f5b11849d015edae56ffd74e0e5a149e2d392485516218de56a9a74d557578b7f764109c301:ap-northeast-1</ManifestVersion>
+    <Policies>
+        <Policy>Api_FlowCallout_CaptureFrontendDetails</Policy>
+        <Policy>Api_FlowCallout_ErrorHandling</Policy>
+        <Policy>Api_FlowCallout_VerifyJWT_RoleResouceMapping</Policy>
+        <Policy>Api_RaiseFault_UnknownResource</Policy>
+        <Policy>Assign-Message-1</Policy>
+        <Policy>Spike-Arrest-1</Policy>
+        <Policy>Verify-API-Key-1</Policy>
+        <Policy>add-cors</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources/>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

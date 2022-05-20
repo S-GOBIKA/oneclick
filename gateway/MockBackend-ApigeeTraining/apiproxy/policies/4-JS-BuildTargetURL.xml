@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Javascript async="false" continueOnError="false" enabled="true" timeLimit="200" name="4-JS-BuildTargetURL">
+    <DisplayName>4-JS-BuildTargetURL</DisplayName>
+    <Properties/>
+    <ResourceURL>jsc://BuildTargetURL.js</ResourceURL>
+</Javascript>

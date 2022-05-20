@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="4" name="GenerateJWTtoken">
+    <Basepaths>/generatejwttoken</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1648102458715</CreatedAt>
+    <CreatedBy>gobika.sakthivel@infosys.com</CreatedBy>
+    <Description></Description>
+    <DisplayName>GenerateJWTtoken</DisplayName>
+    <LastModifiedAt>1648102458715</LastModifiedAt>
+    <LastModifiedBy>gobika.sakthivel@infosys.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:ee20a6604cbe3efee62d7965f0d10df334879bb7030d81650a454db6a97183da5de151ada5139f54a0b1d257be90cbbbb70e45160ec206db95b1b4ae8b477a34</ManifestVersion>
+    <Policies>
+        <Policy>generate-policy</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources/>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints/>
+</APIProxy>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FlowCallout async="false" continueOnError="false" enabled="true" name="Api_FlowCallout_CaptureFrontendDetails">
+    <DisplayName>Api_FlowCallout_CaptureFrontendDetails</DisplayName>
+    <FaultRules/>
+    <Properties/>
+    <SharedFlowBundle>API_SharedFlow_CaptureFrontendDetails_V1</SharedFlowBundle>
+</FlowCallout>

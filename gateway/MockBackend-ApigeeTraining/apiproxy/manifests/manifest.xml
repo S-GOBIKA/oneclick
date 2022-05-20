@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="1-Q-ApplyQuota" version="SHA-512:c3b1920b7b18912f33f92012b0b0d0b0d86abbc28ad8ae7805a0c86f9b5256db082e082f8f9b302aef02a080232bd01eaf6c30326afb0b88c80e9cda77718529"/>
+        <VersionInfo resourceName="1-RC-EmployeeResponse" version="SHA-512:7f0d36e32edb39fec484afdcde8c6a2dc86a1effec084147c90908c4d4fd6fc88bca1b28c8f929d29146ec5e19a3a4e50e457d5eadf22fff54994825ba4f41fd"/>
+        <VersionInfo resourceName="1-SA-ArrestTraffic" version="SHA-512:db4700f01efece069d61831ee2a59caafd24da533bf7705ab0477a976f47ce7f1bab302b1e44e05d3babb908455e919d753bc0a0f7ac445457a2caa5cf78ff0c"/>
+        <VersionInfo resourceName="2-AC-RestrictAccess" version="SHA-512:7cc52af3f93ea17c09593138f0928fa506246ad626312ff900dffee5b967111546143515e69f45d404250d8f93a806dd26856fabf4fa20d3ef85d6a65a44b599"/>
+        <VersionInfo resourceName="2-JTP-JSONThreat" version="SHA-512:f7df764064fa25f95d24e36d5aac4d3dd201eca4fd60f0682fa4a30419ae55fa25668248b39773d7353f77d3196881ca6a4cfcd3290d3f640ed90f9b9d6b87b8"/>
+        <VersionInfo resourceName="2-VAK-ValidateAPIKey" version="SHA-512:158b2a30374f201bcc00c5facf5a70e120b165f6ba98d9ce2b19142b5b1d0f4096bb673b22c5c12a46bbf771910adcd6f7ab9ad8472ef73b9618372bf3786810"/>
+        <VersionInfo resourceName="3-EV-ExtractEmployeeId" version="SHA-512:394d7070b1bc9bbdca597dc6b768a7a6307ea79db3cc598fb11a2da7eca39e0c284266980e3b9937f188b2d372c12d7d24d40ba1b4685c7d4cb4719d5eaacf49"/>
+        <VersionInfo resourceName="3-KVMO-FetchKVM" version="SHA-512:12da1a6f459422beae414e7083026a338970bfb520989d3301ae9969554ff06dc8aebb8e31db8d3c0074ec45f6a20c693ba9cdc9a0db8cdbb9f36d8434df0bfa"/>
+        <VersionInfo resourceName="3-RF-MethodNotAllowed" version="SHA-512:07b346325c9582c0eb1b7a799792ad730f55065af789e38412fd474eefebe298220983bc6b1236bf41a46e223d938273ba94bbda771c5b3cf3187c4464048eea"/>
+        <VersionInfo resourceName="3-RF-ResourceNotFound" version="SHA-512:695ab91f27d35d859f8efca12d3203d1b45d465ecbc0ae4c5c13c005ecc958ad9e68c1cfac38be92e7fe60ef4075b391d7f3397bd19e81ed35a6fcd5a5302d94"/>
+        <VersionInfo resourceName="4-JS-BuildTargetURL" version="SHA-512:df574c4a37e9761b641c44ee382c02704741cae92d684fd3f1d8d10fd9393fc0a3c77c79e73fd6caab027244137f095516b859632ba9a45e7498fa31cb7b7d9e"/>
+        <VersionInfo resourceName="4-SC-GetToken" version="SHA-512:9d15411f288462a8a847e675e0e514671c405ebc3dfa5f87553937f5769eb4d23c5ee349e955ef3db7720f9e8639ef0caba0f96d78db5dea1d791cfbd61fbe79"/>
+    </Policies>
+    <ProxyEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:4275200beb57d4e1bfbcc32f9364eb3e5f04a27f792b2a449fde6f9940452c7a4736582b44ee071218b8f3cb186ea1d4291200cfa5704120b3ac8d4e8e8e3095"/>
+    </ProxyEndpoints>
+    <Resources>
+        <VersionInfo resourceName="jsc://BuildTargetURL.js" version="SHA-512:690b04efdd38cbae85fb6c0c3e42be4cbc34bc5694ad0c598d2ffbad9ce39a36ab926a9fb1446c683a2bbd299adbb4d82e3e3970ce7834a87ea4447d410e9266"/>
+    </Resources>
+    <SharedFlows/>
+    <TargetEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:b1bdc81fffe36559d37eca6c2a45aaa6b8780f1d574bbc691360c36f5d6e69974b7d17b6068e89ed003aebc23d079eab3676d05054314fc9a34df450ef3800d7"/>
+    </TargetEndpoints>
+</Manifest>

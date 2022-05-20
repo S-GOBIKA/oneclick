@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SpikeArrest async="false" continueOnError="false" enabled="true" name="1-SA-ArrestTraffic">
+    <DisplayName>1-SA-ArrestTraffic</DisplayName>
+    <Properties/>
+    <Identifier ref="request.header.some-header-name"/>
+    <MessageWeight ref="request.header.weight"/>
+    <Rate ref="spikeArrestValue">60pm</Rate>
+    <UseEffectiveCount>true</UseEffectiveCount>
+</SpikeArrest>

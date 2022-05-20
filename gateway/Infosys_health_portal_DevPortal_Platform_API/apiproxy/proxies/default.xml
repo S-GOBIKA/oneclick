@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+    <DefaultFaultRule>
+        <Step>
+            <Name>Api_FlowCallout_ErrorHandling</Name>
+        </Step>
+    </DefaultFaultRule>
+    <PreFlow name="PreFlow">
+        <Request>
+            <Step>
+                <Name>Verify-API-Key-1</Name>
+                <Condition> (request.verb != "OPTIONS")</Condition>
+            </Step>
+            <Step>
+                <Name>Spike-Arrest-1</Name>
+            </Step>
+            <Step>
+                <Name>Assign-Message-1</Name>
+                <Condition> (request.verb != "OPTIONS")</Condition>
+            </Step>
+            <Step>
+                <Name>Api_FlowCallout_VerifyJWT_RoleResouceMapping</Name>
+                <Condition> (request.verb != "OPTIONS")</Condition>
+            </Step>
+            <Step>
+                <Name>Api_FlowCallout_CaptureFrontendDetails</Name>
+                <Condition> (request.verb != "OPTIONS")</Condition>
+            </Step>
+        </Request>
+        <Response/>
+    </PreFlow>
+    <Flows>
+        <Flow name="Options Flow">
+            <Description/>
+            <Request/>
+            <Response/>
+            <Condition> (request.verb = "OPTIONS")</Condition>
+        </Flow>
+        <Flow name="searchApiResourcePerformanceUsingGET_2">
+            <Description>searchApiResourcePerformance</Description>
+            <Request/>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/fhir/ApiMetrics/PatientAccess/search/*") and (request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="getApiResourcePerformanceUsingGET_2">
+            <Description>getApiResourcePerformance</Description>
+            <Request/>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/fhir/ApiMetrics/PatientAccess/*") and (request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="searchApiResourcePerformanceUsingGET_3">
+            <Description>searchApiResourcePerformance</Description>
+            <Request/>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/fhir/ApiMetrics/ProviderAccess/search/*") and (request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="getApiResourcePerformanceUsingGET_3">
+            <Description>getApiResourcePerformance</Description>
+            <Request/>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/fhir/ApiMetrics/ProviderAccess/*") and (request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="getMostSearchedApisUsingGET_1">
+            <Description>getMostSearchedApis</Description>
+            <Request/>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/fhir/ApiMetrics/mostSearchedApis") and (request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="performanceUsingGET_1">
+            <Description>performance</Description>
+            <Request/>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/fhir/ApiMetrics/performance") and (request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="UnknownResource">
+            <Description>Unknown Resource</Description>
+            <Request>
+                <Step>
+                    <Name>Api_RaiseFault_UnknownResource</Name>
+                </Step>
+            </Request>
+            <Response/>
+        </Flow>
+    </Flows>
+    <PostFlow name="PostFlow">
+        <Request/>
+        <Response>
+            <Step>
+                <Name>add-cors</Name>
+            </Step>
+        </Response>
+    </PostFlow>
+    <HTTPProxyConnection>
+        <BasePath>/infosys_health_portal_devportal_platform_api</BasePath>
+        <VirtualHost>secure</VirtualHost>
+    </HTTPProxyConnection>
+    <RouteRule name="NoRoute">
+        <Condition>(request.verb = "OPTIONS")</Condition>
+    </RouteRule>
+    <RouteRule name="default">
+        <TargetEndpoint>default</TargetEndpoint>
+        <Condition>(request.verb != "OPTIONS")</Condition>
+    </RouteRule>
+</ProxyEndpoint>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="4" name="MockBackend-ApigeeTraining">
+    <Basepaths>/mockbackend/apigeetraining/v1</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1630433645929</CreatedAt>
+    <CreatedBy>shrenikkumar_s@infosys.com</CreatedBy>
+    <Description></Description>
+    <DisplayName>MockBackend-ApigeeTraining</DisplayName>
+    <LastModifiedAt>1630459381571</LastModifiedAt>
+    <LastModifiedBy>shrenikkumar_s@infosys.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:8721994116bc11aad5576a56a52742942a43ea0a52eec5ec32607ccb98530d9eb9ca776d1e9b1e8e3a7eaef0d850fae2dba2560db33152278e88de64f7b45f40:us-east-1</ManifestVersion>
+    <Policies>
+        <Policy>1-Q-ApplyQuota</Policy>
+        <Policy>1-RC-EmployeeResponse</Policy>
+        <Policy>1-SA-ArrestTraffic</Policy>
+        <Policy>2-AC-RestrictAccess</Policy>
+        <Policy>2-JTP-JSONThreat</Policy>
+        <Policy>2-VAK-ValidateAPIKey</Policy>
+        <Policy>3-EV-ExtractEmployeeId</Policy>
+        <Policy>3-KVMO-FetchKVM</Policy>
+        <Policy>3-RF-MethodNotAllowed</Policy>
+        <Policy>3-RF-ResourceNotFound</Policy>
+        <Policy>4-JS-BuildTargetURL</Policy>
+        <Policy>4-SC-GetToken</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>jsc://BuildTargetURL.js</Resource>
+    </Resources>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

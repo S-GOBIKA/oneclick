@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AccessControl async="false" continueOnError="false" enabled="true" name="2-AC-RestrictAccess">
+    <DisplayName>2-AC-RestrictAccess</DisplayName>
+    <Properties/>
+    <IPRules noRuleMatchAction="ALLOW">
+        <MatchRule action="ALLOW">
+            <SourceAddress mask="32">199.19.253.235</SourceAddress>
+        </MatchRule>
+        <MatchRule action="DENY">
+            <SourceAddress mask="24">10.10.10.20</SourceAddress>
+        </MatchRule>
+    </IPRules>
+</AccessControl>

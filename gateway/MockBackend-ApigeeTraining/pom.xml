@@ -54,7 +54,7 @@
           <artifactId>apigee-edge-maven-plugin</artifactId>
  <version>2.3.1</version>
             <configuration>
-              <skip>true</skip> <!-- Use this module level config to skip module build. Make it true -->
+              <skip>false</skip> <!-- Use this module level config to skip module build. Make it true -->
             </configuration>
             <executions>
               <execution>

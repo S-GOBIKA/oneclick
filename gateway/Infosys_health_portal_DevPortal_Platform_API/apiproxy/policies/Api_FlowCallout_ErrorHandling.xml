@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<FlowCallout async="false" continueOnError="false" enabled="true" name="Api_FlowCallout_ErrorHandling">
-    <DisplayName>Api_FlowCallout_ErrorHandling</DisplayName>
-    <FaultRules/>
-    <Properties/>
-    <SharedFlowBundle>API_SharedFlow_ErrorHandler_Rest_V1</SharedFlowBundle>
-</FlowCallout>

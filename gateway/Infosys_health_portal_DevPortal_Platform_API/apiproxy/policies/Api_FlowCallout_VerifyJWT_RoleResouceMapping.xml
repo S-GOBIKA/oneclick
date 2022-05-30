@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<FlowCallout async="false" continueOnError="false" enabled="true" name="Api_FlowCallout_VerifyJWT_RoleResouceMapping">
-    <DisplayName>Api_FlowCallout_VerifyJWT_RoleResouceMapping</DisplayName>
-    <FaultRules/>
-    <Properties/>
-    <SharedFlowBundle>API_SharedFlow_GetResorcesBasedOnRole</SharedFlowBundle>
-</FlowCallout>

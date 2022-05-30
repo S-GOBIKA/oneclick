@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<SpikeArrest async="false" continueOnError="false" enabled="true" name="Spike-Arrest-1">
-    <DisplayName>Api_Spike Arrest</DisplayName>
-    <Properties/>
-    <Rate>30ps</Rate>
-</SpikeArrest>

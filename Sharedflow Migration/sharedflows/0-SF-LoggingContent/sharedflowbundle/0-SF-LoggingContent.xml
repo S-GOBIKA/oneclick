@@ -1,0 +1,17 @@
+<SharedFlowBundle revision="1" name="0-SF-LoggingContent">
+    <DisplayName>0-SF-LoggingContent</DisplayName>
+    <Description>Logs crucial data for the api</Description>
+    <CreatedAt>1650527539310</CreatedAt>
+    <LastModifiedAt>1650535563378</LastModifiedAt>
+    <Policies>
+        <Policy>4-JS-LoggingContent</Policy>
+        <Policy>4-ML-WriteLog</Policy>
+    </Policies>
+    <Resources>
+        <Resource>jsc://LoggingContent/LoggingContent.js</Resource>
+    </Resources>
+    <SharedFlows>
+        <SharedFlow>default</SharedFlow>
+    </SharedFlows>
+    <subType>SharedFlow</subType>
+</SharedFlowBundle>

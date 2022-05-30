@@ -1,0 +1,18 @@
+<SharedFlowBundle revision="1" name="0-SF-LogULFFContent">
+    <DisplayName></DisplayName>
+    <Description>Shared flow implementing logging</Description>
+    <CreatedAt>1650608592484</CreatedAt>
+    <LastModifiedAt>1650609012323</LastModifiedAt>
+    <Policies>
+        <Policy>4-JS-LoggingContent</Policy>
+        <Policy>4-ML-WriteLog</Policy>
+    </Policies>
+    <Resources>
+        <Resource>jsc://LoggingContent/LoggingContent.js</Resource>
+        <Resource>jsc://LoggingULFFContentSpec.js</Resource>
+    </Resources>
+    <SharedFlows>
+        <SharedFlow>default</SharedFlow>
+    </SharedFlows>
+    <subType>SharedFlow</subType>
+</SharedFlowBundle>

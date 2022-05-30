@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MessageLogging async="false" continueOnError="false" enabled="true" name="4-ML-WriteLog">
+    <DisplayName>4-ML-WriteLog</DisplayName>
+    <Syslog>
+        <Message>{loggingPayload}</Message>
+        <Host>localhost</Host>
+        <Port>10514</Port>
+        <Protocol>TCP</Protocol>
+    </Syslog>
+</MessageLogging>
